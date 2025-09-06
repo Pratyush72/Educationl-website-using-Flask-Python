@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.python-header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex;  
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Section */
+.python-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Individual Note Box */
+.python-card {
+    background-color: #f9f9f9;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading inside the box */
+.python-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description text */
+.python-card-text {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.python-card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.python-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.python-btn:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.python-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+    .python-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .python-card {
+        width: 90%;
+    }
+}
+</style>
+
+<header class="python-header">
+    Django Learning Resources
+</header>
+
+<main>
+    <section class="python-container">
+        <div class="python-card">
+            <h2 class="python-card-title">Python Basics</h2>
+            <p class="python-card-text">Learn the fundamentals of Python programming.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/notes/Python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/notes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+        <div class="python-card">
+            <h2 class="python-card-title">Data Structures</h2>
+            <p class="python-card-text">Understand lists, tuples, sets, and dictionaries in Python.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+        <div class="python-card">
+            <h2 class="python-card-title">Data Structures</h2>
+            <p class="python-card-text">Understand lists, tuples, sets, and dictionaries in Python.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="python-container">
+        <div class="python-card">
+            <h2 class="python-card-title">Python Basics</h2>
+            <p class="python-card-text">Learn the fundamentals of Python programming.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+
+        <div class="python-card">
+            <h2 class="python-card-title">Data Structures</h2>
+            <p class="python-card-text">Understand lists, tuples, sets, and dictionaries in Python.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+        <div class="python-card">
+            <h2 class="python-card-title">Data Structures</h2>
+            <p class="python-card-text">Understand lists, tuples, sets, and dictionaries in Python.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="python-container">
+        <div class="python-card">
+            <h2 class="python-card-title">Python Basics</h2>
+            <p class="python-card-text">Learn the fundamentals of Python programming.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+
+        <div class="python-card">
+            <h2 class="python-card-title">Data Structures</h2>
+            <p class="python-card-text">Understand lists, tuples, sets, and dictionaries in Python.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+        <div class="python-card">
+            <h2 class="python-card-title">Data Structures</h2>
+            <p class="python-card-text">Understand lists, tuples, sets, and dictionaries in Python.</p>
+            <div class="python-card-buttons">
+                <button class="python-btn" onclick="readPDF('/static/pythonnotes/python.pdf')">Read PDF</button>
+                <button class="python-btn" onclick="downloadPDF('/static/pythonnotes/python.pdf')">Download PDF</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<script>
+    function readPDF(filePath) {
+        window.open(filePath, '_blank');
+    }
+    
+    function downloadPDF(filePath) {
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.download = filePath.split('/').pop(); // Extracts filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    
+</script>
+
+{% endblock %}

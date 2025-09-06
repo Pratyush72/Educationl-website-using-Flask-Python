@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <marquee direction="left"><section class="content">
+        {% if username %}
+        <h2>Hello, {{ username }}!</h2>
+        <h2>WELCOME TO OUR WEBSITE</h2>
+        {% else %}
+        <h2>WELCOME TO OUR WEBSITE</h2>
+        {% endif %}
+    </section></marquee>
+</section>
+<!-- <section class="content">
+    {% if username %}
+    <h2>Hello, {{ username }}!</h2>
+    {% else %}
+    <h2>About Us</h2>
+    <p>Some content goes here...</p>
+    {% endif %}
+</section> -->
+
+<section class="features">
+           <div class="feature-container">
+            <a href="/html">
+             <img src="/static/image/html.jpeg" alt="Flexbox Feature">
+              <h2 class="fetures-heading">HTML</h2>
+             <p>HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. </p>
+           </div>
+          </a>
+           <div class="feature-container">
+            <a href="/css">
+             <img src="/static/image/css.jpeg" alt="Flexbox Feature">
+             <h2 class="fetures-heading">CSS</h2>
+             <p>While flexbox is used for the the mobile navbar, CSS grid is used for the desktop navbar showing many ways we can use both.</p>
+           </div>
+          </a>
+           <div class="feature-container">
+            <a href="/js">
+             <img src="/static/image/javascript.jpeg" alt="Flexbox Feature">
+             <h2 class="fetures-heading">JAVASCRIPT</h2>
+             <p>The first popular web browser with a graphical user interface, Mosaic, was released in 1993. Accessible to non-technical people, it played a prominent role in the rapid growth of the early World Wide Web.</p>
+           </div>
+          </a>
+           
+         </section>
+
+         <section class="features">
+           <div class="feature-container">
+            <a href="/c">
+            <img src="/static/image/C++.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">C++</h2>
+            <p>C++ is one of the world's most popular programming languages. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/java">
+            <img src="/static/image/java.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">JAVA</h2>
+            <p>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/python">
+            <img src="/static/image/python.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">PYTHON</h2>
+            <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding.</p>
+          </div>
+         </a>
+          
+        </section>
+
+        <section class="features">
+          <div class="feature-container">
+            <a href="/flask">
+            <img src="/static/image/flask.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">FLASK</h2>
+            <p>Flask provides configuration and conventions, with sensible defaults, to get started. This section of the documentation explains the different parts of the Flask framework and how they can be used.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/django">
+            <img src="/static/image/django.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">DJANGO</h2>
+            <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/ml">
+            <img src="/static/image/pandas.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">PANDAS</h2>
+            <p>pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+              built on top of the Python programming language.</p>
+          </div>
+        </a>
+          
+        </section>
+        <section class="features">
+          <div class="feature-container">
+            <a href="/flask">
+            <img src="/static/image/flask.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">AI</h2>
+            <p>Flask provides configuration and conventions, with sensible defaults, to get started. This section of the documentation explains the different parts of the Flask framework and how they can be used.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/django">
+            <img src="/static/image/django.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">ML</h2>
+            <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/ml">
+            <img src="/static/image/pandas.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">DL</h2>
+            <p>pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+              built on top of the Python programming language.</p>
+          </div>
+        </a>
+          
+        </section>
+        <section class="features">
+          <div class="feature-container">
+            <a href="/flask">
+            <img src="/static/image/flask.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">DATABASE</h2>
+            <p>Flask provides configuration and conventions, with sensible defaults, to get started. This section of the documentation explains the different parts of the Flask framework and how they can be used.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/django">
+            <img src="/static/image/django.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">DSA</h2>
+            <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</p>
+          </div>
+         </a>
+          <div class="feature-container">
+            <a href="/ml">
+            <img src="/static/image/pandas.jpeg" alt="Flexbox Feature">
+            <h2 class="fetures-heading">Aptitude</h2>
+            <p>pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+              built on top of the Python programming language.</p>
+          </div>
+        </a>
+          
+        </section>
+       </div>
+
+
+<!-- ---------social links---------------- -->
+
+<div class="shadow p-3 mb-5 bg-body rounded">
+    <div class="social-links">
+      <a href="https://github.com/Pratyush72" class="github" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/pratyush-chaubey-8ab289188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://codepen.io/@Pratyush-Chaubey" class="codepen" target="_blank" title="CodePen">
+          <i class="fab fa-codepen"></i>
+      </a>
+      <a href="https://youtube.com/@softwareengineer72?si=F3gDnC4YcdVmOuJs  " class="youtube" target="_blank" title="YouTube">
+          <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/pratyush_72" class="instagram" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- -------------show downloded------------ -->
+     
+    <div class="downlodad-main">
+      <div class="download-show">
+        <div class="download-show-item">
+            <h2>15+</h2>
+            <p>Project</p>
+        </div>
+        <div class="download-show-item">
+            <h2>5+</h2>
+            <p>Paid Project</p>
+        </div>
+        <div class="download-show-item">
+            <h2 id="reachCount">10+</h2>
+            <p>Reach</p>
+        </div>
+        <div class="download-show-item">
+            <h2>15+</h2>
+            <p>Interview</p>
+        </div>
+      </div>
+      </div>
+    
+
+{% endblock %}
